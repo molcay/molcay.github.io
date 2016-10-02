@@ -1,0 +1,49 @@
+name: Generate Resume
+on:
+  push:
+    paths:
+      - "resume/resume.md"
+      - "assets/css/style.css"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Convert Markdown to PDF
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_path: resume/resume.md
+          # The tool creates a 'built' directory by default if output_dir is not set
+          build_html: false
+          theme: assets/css/style.css
+
+      - name: Fix Permissions and Move PDF
+        run: |
+          # 1. Take back ownership of files created by the Docker container
+          sudo chown -R $USER:$USER .
+
+          # 2. Ensure the destination folder exists
+          mkdir -p assets/pdf
+
+          # 3. Find the PDF (usually in ./built/ if output_dir wasn't specified)
+          GENERATED_FILE=$(find . -name "*.pdf" -type f | head -n 1)
+
+          if [ -n "$GENERATED_FILE" ]; then
+            echo "Found $GENERATED_FILE. Moving to assets/pdf/Olcay_Tercanli_Resume.pdf"
+            mv "$GENERATED_FILE" assets/pdf/Olcay_Tercanli_Resume.pdf
+          else
+            echo "Error: No PDF file found."
+            exit 1
+          fi
+
+      - name: Commit and Push PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-generate Professional Resume PDF"
+          file_pattern: "assets/pdf/Olcay_Tercanli_Resume.pdf"

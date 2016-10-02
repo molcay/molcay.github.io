@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olcay Tercanli | Senior Software Engineer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+      /* Extra layout styling for the web view */
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #eceff4;
+      } /* Nord Snow Storm */
+      .container {
+        background: #ffffff;
+        padding: 3rem;
+        margin-top: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+      .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-bottom: 2rem;
+      }
+      .btn-pdf {
+        background-color: #5e81ac;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+      .btn-pdf:hover {
+        background-color: #81a1c1;
+      }
+      #resume-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-links">
+        <a href="https://blog.tercanli.com">Blog</a>
+        <a href="https://tercanli.com">TERCANLI Hub</a>
+        <a href="assets/pdf/Olcay_Tercanli_Resume.pdf" class="btn-pdf">Download PDF</a>
+      </nav>
+
+      <div id="resume-content">
+        <p>Loading professional profile...</p>
+      </div>
+    </div>
+
+    <script>
+      // Fetch the resume.md and render it
+      fetch("resume/resume.md")
+        .then((response) => response.text())
+        .then((text) => {
+          document.getElementById("resume-content").innerHTML = marked.parse(text);
+        })
+        .catch((err) => {
+          document.getElementById("resume-content").innerHTML = "Error loading resume content.";
+        });
+    </script>
+  </body>
+</html>

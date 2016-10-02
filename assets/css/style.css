@@ -1,0 +1,67 @@
+/* style.css - Unified Nord Theme */
+:root {
+    --nord0: #2e3440; /* Polar Night */
+    --nord3: #4c566a;
+    --nord8: #88c0d0; /* Frost Blue */
+    --nord10: #5e81ac; /* Arctic Blue */
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--nord0);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--nord10);
+    font-weight: 600;
+}
+h1 {
+    border-bottom: 3px solid var(--nord8);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+h3 {
+    border-left: 4px solid var(--nord8);
+    padding-left: 15px;
+    margin-top: 2rem;
+}
+
+a {
+    color: var(--nord10);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--nord8);
+}
+a:hover {
+    color: var(--nord8);
+    border-bottom-style: solid;
+}
+
+ul {
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 8px;
+    list-style-type: square;
+}
+li::marker {
+    color: var(--nord8);
+}
+
+/* PDF specific tweaks - helps with page breaks */
+@media print {
+    .nav-links {
+        display: none;
+    }
+    body {
+        padding: 0;
+        background: white;
+    }
+    .container {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+}
