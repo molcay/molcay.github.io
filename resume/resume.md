@@ -4,39 +4,41 @@
 ---
 
 ### **Summary**
-Senior Software Engineer with over 8 years of experience specializing in Python, Full-Stack development, and Cloud Architecture (AWS/GCP). Proven track record of contributing to major Open Source projects like Apache Airflow and delivering scalable solutions for FAANG-level environments. Passionate about automating development cycles and solving complex infrastructure challenges.
+Software Engineer with over 8 years of experience specializing in Python-focused full-stack development. Expert in architecting cloud-native solutions across AWS and GCP. Significant experience contributing to core open-source ecosystems like **Apache Airflow** and delivering high-concurrency systems for enterprise and FAANG clients.
 
 ### **Skills**
-* **Languages:** Python (Expert), JavaScript, Java, Scala
-* **Frameworks:** Django, Flask, FastAPI, aiohttp, React, Vue.js, Spring
-* **Infrastructure:** AWS, GCP, Docker, Kubernetes, Jenkins, GitHub Actions
-* **Data & IoT:** Apache Airflow, PostgreSQL, Redis, Raspberry Pi, MQTT
+* **Languages:** Python, JavaScript, Java, Scala
+* **Frameworks:** Django, Flask, aiohttp, React, Play, Spring, Vert.x, Angular.js
+* **Infrastructure:** GCP, AWS, Docker, Jenkins, Bash
+* **Data & IoT:** Apache Airflow, PostgreSQL, Redis, MySQL, Spanner, MongoDB, Raspberry Pi
 
-### **Experience**
+### **Work Experience**
 
-**EPAM Systems | Senior Software Engineer** *Kraków, Poland | Jan 2024 – Present*
-* **FAANG Cloud Ecosystem:** Architecting scalable Python-based microservices for a global technology leader, ensuring high availability within complex GCP environments.
-* **Open Source:** Contributing core features to **Apache Airflow**, optimizing workflow orchestration for data engineering teams worldwide.
-* **Velocity Improvements:** Streamlined CI/CD pipelines using Docker and GCP, reducing deployment latency and improving system reliability.
+**EPAM Systems | Software Engineer** *Kraków, Poland | Nov 2021 – Present*
 
-**EPAM Systems | Software Engineer** *Kraków, Poland | Nov 2021 – Dec 2023*
-* **Real-time Chat Systems:** Engineered high-concurrency chatbot services using **aiohttp** and **WebSockets** for a leading HR and Workforce Management provider.
-* **System Modularization:** Redesigned core HR management tools in **Django**, facilitating easier integration with large-scale corporate legacy systems.
-* **Environment Standardization:** Leveraged **Docker** to eliminate environment-specific bugs, ensuring 100% consistency across dev, staging, and production.
+**Customer: FAANG (Managed Apache Airflow Service)**
+* **Open Source Contribution:** Part of a core team contributing feature developments and maintenance to the **Apache Airflow** codebase and provider integrations.
+* **Cloud Engineering:** Developing full-scale cloud-based products on GCP, adhering to rigorous enterprise standards for global managed services.
 
-**Independent Technical Consultant (Freelance)** *Remote | 2017 – Present*
-* **Strategic MVP Development:** Provided end-to-end technical consultancy for international startups, focusing on lean Python backends and scalable cloud deployments.
-* **Automation Consultancy:** Developed custom data processing tools and automated workflows for diverse business niches, reducing manual overhead for clients.
+**Customer: UKG (HR, Payroll & Workforce Management)**
+* **Knowledge Base Chat Systems:** Engineered high-concurrency chatbot services using **aiohttp** and **Socket.io** (WebSockets) to provide instant access to internal knowledge base resources.
+* **Enterprise Tooling:** Developed Django-based HR task management tools and led migration efforts toward GCP infrastructure using Docker for standardized deployment.
 
-**Urla Digital Agriculture | Software Engineer** *İzmir, Turkey | June 2020 – Oct 2021*
-* **IoT Fleet Management:** Designed a hybrid infrastructure for **Raspberry Pi** devices, enabling full automation of controlled-environment agriculture.
-* **Serverless Architecture:** Implemented event-driven logic using **AWS Lambda, SQS, and SNS**, creating a self-healing monitoring system for precision farming.
+**Urla Digital Agriculture | Full Stack / IoT Infrastructure Developer** *İzmir, Turkey | June 2020 – Oct 2021*
+* **IoT Fleet Management:** Developed Python software for **Raspberry Pi** nodes to automate controlled-environment agriculture, managing valves, sensors, and relays.
+* **Cloud Pipeline:** Designed a hybrid AWS data pipeline using **Lambda, SQS, SNS, and Kinesis Firehose** for scalable sensor data ingestion and alerting.
+* **Remote Operations:** Created a centralized Django dashboard for remote configuration, updates, and control of global IoT devices.
 
-**Linovi | Software Engineer** *İzmir, Turkey | Dec 2017 – June 2020*
-* **Enterprise Integrations:** Developed web services connecting Google Chat with Jira, Salesforce, and Zendesk using **Scala (Play)** and **React**.
-* **Autonomous Driving Dashboards:** Built mission-critical visualization tools using **Java (Vert.x)** and **Amazon Web Services**.
+**Linovi | Full Stack Developer** *İzmir, Turkey | Dec 2017 – June 2020*
+* **Platform Migration:** Executed the migration of Google Chat bot integrations from serverless functions to a scalable microservices architecture using **Scala and the Play Framework**.
+* **Autonomous Driving Dashboards:** Built and maintained real-time fleet information dashboards for an autonomous driving company using **Java (Vert.x)** and React.
+* **SaaS Security:** Contributed to **Asena**, a US-based information security SaaS product, utilizing a Spring Boot backend and a Flask-based ML API layer.
+
+**Freelance & Independent Projects | Full Stack Contributor** *2017 – Present*
+* **SaaS Development:** Built **clevercsv.com**, an AI-integrated SaaS using Django and Vanilla JS, featuring Stripe payments and multi-LLM (OpenAI, Gemini, DeepSeek) API integrations.
+* **Cloud Architecture:** Executed comprehensive AWS deployments including EC2, S3, CodePipeline, and API Gateway for various visual chat and migration projects.
 
 ---
 
 ### **Education**
-**Muğla Sıtkı Koçman University** | *Computer Engineering* (GPA: 3.52/4.00)
+**Muğla Sıtkı Koçman University** | *B.S. in Computer Engineering* (GPA: 3.52/4.00)
