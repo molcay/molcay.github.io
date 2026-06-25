@@ -4,23 +4,25 @@
 ---
 
 ### **Summary**
-Software Engineer with over 8 years of experience specializing in Python-focused full-stack development. Expert in architecting cloud-native solutions across AWS and GCP. Significant experience contributing to core open-source ecosystems like **Apache Airflow** and delivering high-concurrency systems for enterprise and FAANG clients.
+Software Engineer with over 8 years of experience specializing in Java and Python full-stack development. Expert in architecting cloud-native solutions across AWS and GCP. Significant experience contributing to core open-source ecosystems like **Apache Airflow** and delivering high-concurrency systems for enterprise and FAANG clients.
 
 ### **Skills**
 * **Languages:** Python, JavaScript, Java, Scala
 * **Frameworks:** Django, Flask, aiohttp, React, Play, Spring, Vert.x, Angular.js
 * **Infrastructure:** GCP, AWS, Docker, Jenkins, Bash
-* **Data & IoT:** Apache Airflow, PostgreSQL, Redis, MySQL, Spanner, MongoDB, Raspberry Pi
+* **Data & Streaming:** Event-Driven Architectures, AWS Kinesis, AWS SQS, AWS SNS, Apache Airflow, PostgreSQL, Redis, MySQL, Spanner, MongoDB
 
 ### **Work Experience**
 
 **EPAM Systems | Software Engineer** *Kraków, Poland | Nov 2021 – Present*
 
-**Customer: FAANG (Managed Apache Airflow Service)**
+**Customer: One of the FAANG companies (Managed Apache Airflow Service)**
+* **Technical Leadership:** Acting as the technical lead for a critical dashboard initiative, owning the end-to-end development lifecycle and ensuring systems meet rigorous global performance standards.
 * **Open Source Contribution:** Part of a core team contributing feature developments and maintenance to the **Apache Airflow** codebase and provider integrations.
 * **Cloud Engineering:** Developing full-scale cloud-based products on GCP, adhering to rigorous enterprise standards for global managed services.
 
 **Customer: UKG (HR, Payroll & Workforce Management)**
+* **Knowledge Transfer & Mentorship:** Led the technical transition and knowledge transfer process for the UKG platform, mentoring two engineers to ensure a seamless project handover and ongoing operational continuity.
 * **Knowledge Base Chat Systems:** Engineered high-concurrency chatbot services using **aiohttp** and **Socket.io** (WebSockets) to provide instant access to internal knowledge base resources.
 * **Enterprise Tooling:** Developed Django-based HR task management tools and led migration efforts toward GCP infrastructure using Docker for standardized deployment.
 
